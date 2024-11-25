@@ -1,0 +1,176 @@
+.holidayList {
+  padding: 2rem;
+
+  &__header {
+    border-bottom: 1px solid #D88C2B;
+    margin-bottom: 1rem;
+
+    &__title {
+      margin: 0 0 0.5rem 0;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0.5rem;
+    }
+  }
+
+  &__body {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__search {
+        label {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-left: 0.25rem;
+
+          input {
+            padding: 0.25rem;
+            outline: none;
+            border: none;
+            box-shadow: inset 0 0 2px 0px black;
+            height: 30px;
+          }
+
+          .icon-container {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__text {
+        p {
+          margin: 0;
+        }
+      }
+
+      &__add {
+        &__btn {
+          cursor: pointer;
+          background-color: #FF5524;
+          padding: 0.5rem;
+          font-size: 1rem;
+          font-weight: 300;
+          gap: .2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-transform: uppercase;
+          border: none;
+        }
+      }
+    }
+
+    &__list {
+      width: 100%;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.5rem;
+      }
+
+      thead>tr>th,
+      thead>tr,
+      thead {
+        background-color: #003442;
+        color: #fff;
+        text-align: left;
+        padding: 0.5rem 0.25rem;
+      }
+
+      td,
+      th {
+        padding: 0 1rem 0 0;
+        height: 2.25rem;
+
+
+
+      }
+
+    }
+  }
+}
+
+.icon-container {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-container--small {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.actionsBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  .actionBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+
+    &--edit {
+      background-color: #FF2B1F;
+    }
+
+    &--delete {
+      background-color: #FFB070;
+    }
+  }
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+
+  input {
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 2rem;
+}
